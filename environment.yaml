@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: master-pv-1
+  name: skoch-pv-1
   labels:
     type: local
 spec:
@@ -10,10 +10,10 @@ spec:
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: /tmp/data/master-pv-1
+    path: /tmp/data/skoch-pv-1
 ---    
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: master
-  namespace: master
+  name: skoch
+  namespace: skoch
